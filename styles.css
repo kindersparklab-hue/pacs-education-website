@@ -1,0 +1,43 @@
+:root {
+    --navy: #0B2E59;
+    --gold: #C8A24D;
+    --white: #FFFFFF;
+    --light-gray: #F4F4F4;
+}
+
+body { font-family: 'Poppins', sans-serif; margin: 0; line-height: 1.6; }
+
+/* Luxury Navbar */
+.navbar {
+    position: sticky; top: 0; background: var(--white); padding: 1rem 5%;
+    display: flex; justify-content: space-between; align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); z-index: 1000;
+}
+
+.nav-logo { height: 60px; }
+
+/* Hero Section */
+.hero {
+    height: 90vh; background: url('Assets/Images/hero.jpg') center/cover;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; color: var(--white); position: relative;
+}
+
+.hero-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(11,46,89,0.85); }
+
+.hero-content { position: relative; z-index: 1; max-width: 800px; }
+
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 1rem; }
+
+/* Premium Buttons */
+.btn-primary {
+    background: var(--gold); color: var(--navy); border: none; padding: 15px 30px;
+    font-weight: 600; cursor: pointer; transition: 0.4s; border-radius: 5px;
+}
+
+.btn-primary:hover { background: #b08d3f; transform: translateY(-2px); }
+
+/* Stats Grid */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); padding: 4rem 5%; background: var(--light-gray); }
+.stat-card { text-align: center; }
+.stat-card h3 { color: var(--navy); font-size: 2.5rem; margin: 0; }
